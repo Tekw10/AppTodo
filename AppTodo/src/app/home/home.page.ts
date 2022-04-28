@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor(private alertCtrl: AlertControleler) {}
+  constructor(private alertCtrl: AlertController) {}
 
   async showAdd(){
     const alert = await this.alertCtrl.create({
