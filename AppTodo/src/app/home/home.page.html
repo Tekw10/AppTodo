@@ -7,5 +7,30 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Estudar Ionic</ion-label>
+        <ion-icon slot ="start" name="radio-button-off-outline"></ion-icon>
+      </ion-item>
+      <ion-iten-optionsside="start">
+        <ion-iten-options (click="unread(item)")>Pendente</ion-iten-options>
+      </ion-iten-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Fazer atividade 27/04</ion-label>
+        <ion-icon slot ="start" name="radio-button-off-outline"></ion-icon>
+      </ion-item>
+      <ion-iten-optionsside="start">
+        <ion-iten-options (click="unread(item)")>Pendente</ion-iten-options>
+      </ion-iten-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-fab vertical="center" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
